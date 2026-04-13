@@ -3,8 +3,8 @@ import numpy as np
 import joblib
 import pandas as pd
 
+
 #load model and pipeline 
-model = joblib.load("model.pkl")
 pipeline = joblib.load("pipeline.pkl")
 
 #tittle
