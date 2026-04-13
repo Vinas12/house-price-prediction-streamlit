@@ -3,6 +3,13 @@ import numpy as np
 import joblib
 import pandas as pd
 
+@st.cache_resource
+def load_model():
+    model = joblib.load("model.pkl")
+    return model
+
+model = load_model()
+
 
 #load model and pipeline 
 pipeline = joblib.load("pipeline.pkl")
